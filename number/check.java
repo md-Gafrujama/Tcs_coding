@@ -1,10 +1,10 @@
 public class check {
     public static boolean isPalindrome(int n) {
         int reverse = 0;
-
-        while (n != 0) {
+        int temp = n;
+        while (temp != 0) {
             reverse = (reverse * 10) + (n % 10);  // Reverses the digits of the number
-            n/=10;
+            temp/=10;
         }
         return (reverse == n);  
     }
