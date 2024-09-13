@@ -1,63 +1,26 @@
 package Array;
 
-import java.util.Scanner;
-
 public class reverse {
+    // Function to reverse an array
     public void reverseArray(int[] arr, int N) {
-        int start = 0;
-        int end = N - 1;
+        int start = 0;          // Starting index
+        int end = N - 1;        // Ending index
         while (start < end) {
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
-            start++;
-            end--;
+            int temp = arr[start];   // Temporary variable to hold the current start element
+            arr[start] = arr[end];   // Assign end element to start position
+            arr[end] = temp;         // Assign stored start element to end position
+            start++;                 // Move start pointer towards the center
+            end--;                   // Move end pointer towards the center
         }
     }
-
-    // Main method - driver code
     public static void main(String[] args) {
         reverse solution = new reverse(); 
-        
-        // Predefined test case 1
-        System.out.println("Running predefined test case 1:");
-        int[] arr1 = {5, 4, 3, 2, 1};
-        solution.reverseArray(arr1, arr1.length);
+        int[] arr1 = {5, 4, 3, 2, 1};  
+        solution.reverseArray(arr1, arr1.length);  
         System.out.println("Reversed array: ");
-        for (int num : arr1) {
-            System.out.print(num + " ");  // Output: 1 2 3 4 5
+        for (int num : arr1) { 
+            System.out.print(num + " "); 
         }
         System.out.println("\n");
-        
-        // Predefined test case 2
-        System.out.println("Running predefined test case 2:");
-        int[] arr2 = {10, 20, 30, 40};
-        solution.reverseArray(arr2, arr2.length);
-        System.out.println("Reversed array: ");
-        for (int num : arr2) {
-            System.out.print(num + " ");  // Output: 40 30 20 10
-        }
-        System.out.println("\n");
-
-        // Custom test case
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Now you can test with custom input:");
-        
-        System.out.print("Enter the number of elements in the array: ");
-        int N = scanner.nextInt();
-        
-        
-        int[] arrUser = new int[N];
-        System.out.println("Enter the elements of the array:");
-        for (int i = 0; i < N; i++) {
-            arrUser[i] = scanner.nextInt();
-        }
-        solution.reverseArray(arrUser, N);
-        System.out.println("Reversed array: ");
-        for (int num : arrUser) {
-            System.out.print(num + " ");
-        }
-        
-        scanner.close();
     }
 }
