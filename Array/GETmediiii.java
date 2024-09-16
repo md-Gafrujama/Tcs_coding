@@ -2,7 +2,7 @@ package Array;
 import java.io.*;
 import java.util.Arrays;
 
-public class GET {
+public class GETmediiii {
 
     static private void getMedian(int arr[], int n) {
         // Sort the array
