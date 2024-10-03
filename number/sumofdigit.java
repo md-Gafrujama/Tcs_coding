@@ -3,11 +3,11 @@ class sumofdigit
 {
 static private int getSum(int n)
 {
-	int d;
+	
 	int sum = 0;
 	while (n != 0)
 	{
-		d = n % 10;
+	 int d = n % 10;
 		sum += d;
 		n = n / 10;
 	}

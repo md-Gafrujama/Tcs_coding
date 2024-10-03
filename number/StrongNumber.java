@@ -14,8 +14,7 @@ public class StrongNumber {
     // Function to check if a number is a Strong Number
     public static boolean isStrongNumber(int number) {
         int sum = 0, originalNumber = number;
-        
-        while (number > 0) {
+        while (number !=0) {
             int digit = number % 10;
             sum += factorial(digit);
             number /= 10;

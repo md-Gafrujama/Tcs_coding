@@ -12,6 +12,7 @@ public class rangeprime{
       }
     }
     return true;
+    
 }
 public static void PrintPrimesbwrange(int a,int b){
   for(int i=a;i<=b;i++){

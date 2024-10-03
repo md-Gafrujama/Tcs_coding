@@ -12,7 +12,7 @@ public class SumOfTwoPrimes {
         }
         return true;
     }
-// md gafrujama ansari
+
     // Function to check if a number can be expressed as the sum of two primes
     static boolean canBeSumOfTwoPrimes(int n) {
         for (int i = 2; i <= n / 2; i++) {
