@@ -14,7 +14,7 @@ This repository contains solutions and practice problems for TCS NQT (National Q
 1. Clone the repository:
    ```bash
    git clone https://github.com/md-Gafrujama/Tcs_coding_nqt.git
-cd Tcs_coding_nqt
+--cd Tcs_coding_nqt
 Structure
 /problem_name/: Contains the problem description, solution, and test cases.
 How to Contribute
