@@ -9,7 +9,7 @@ This repository contains solutions and practice problems for TCS NQT (National Q
 - **Solutions**: Efficient and optimized solutions in multiple languages (like Python, Java, C++).
 - **Test Cases**: Input/output examples for each problem to understand edge cases.
 
-## Getting Started
+### Getting Started
 
 1. Clone the repository:
    ```bash
